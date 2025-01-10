@@ -86,7 +86,52 @@
       </div>
     </div>
 
-    <!--prjectss--->
+
+    <!--About Me--->
+    <section class="py-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-black sm:text-4xl">
+            About Me
+          </h2>
+          <p class="mt-4 text-lg leading-6 text-gray-600 dark:text-gray-400">
+            Hi there! 👋 I'm <span class="font-semibold text-blue-600 dark:text-blue-400">Clint Alonzo</span>, an enthusiastic IT student and developer with a passion for creating innovative solutions. From crafting interactive web applications using Python Flask to designing sustainable platforms like BookMart, I strive to make a positive impact through technology.
+          </p>
+        </div>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Skills</h3>
+            <ul class="mt-4 text-gray-600 dark:text-gray-300 list-disc list-inside">
+              <li>Python (Flask)</li>
+              <li>PHP & SQLite</li>
+              <li>Web Development (Tailwind CSS)</li>
+              <li>C# and IoT Integration</li>
+            </ul>
+          </div>
+          <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Interests</h3>
+            <ul class="mt-4 text-gray-600 dark:text-gray-300 list-disc list-inside">
+              <li>Sustainable technology</li>
+              <li>IoT and smart systems</li>
+              <li>Responsive design</li>
+              <li>Exploring new challenges</li>
+            </ul>
+          </div>
+          <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Projects</h3>
+            <p class="mt-4 text-gray-600 dark:text-gray-300">
+              Some of my key projects include:
+              <ul class="mt-2 list-disc list-inside">
+                <li>BookMart: A Laravel-based book-sharing platform</li>
+                <li>Attendance Scanner: RFID and IoT-based system using Flask</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--projectss--->
      
     <div class="max-w-screen-xl mx-auto p-2 sm:p-4 md:p-8 lg:p-12" id="projects">
       <!-- Heading for Projects -->
@@ -265,8 +310,22 @@
       observer.observe(card);
     });
   });
+
+  
 </script>
 
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const letters = document.querySelectorAll('.letter');
+    let delay = 0;
+    letters.forEach(letter => {
+      setTimeout(() => {
+        letter.classList.add('show');
+      }, delay);
+      delay += 200; // Adjust the speed of animation
+    });
+  });
+</script>
 
 
 
