@@ -8,9 +8,6 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
-
     <title>Document</title>
     <style>
      
@@ -26,14 +23,35 @@
         opacity: 1;
         transform: translateY(0);
       }
-
-
+      @media (max-width: 768px) {
+        .container {
+          padding: 1rem;
+        }
+        .flex-wrap {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      @media (max-width: 640px) {
+        h1 {
+          font-size: 2rem;
+        }
+        .text-xl {
+          font-size: 1rem;
+        }
+        .w-40 {
+          width: 100%;
+        }
+        .grid-cols-2 {
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+      }
       </style>
 
 </head>
 <body class="bg-gray-50">
 
-  <div class="container mx-auto px-6 py-2 bg-white border border-gray-300 shadow-md">
+  <div class="container mx-auto px-6 py-6 bg-white border border-gray-300 shadow-md">
     <nav class="flex justify-center mt-6" aria-label="Main Navigation">
     <div class="bg-white shadow-md border border-gray-100 rounded-full px-6 py-2 flex space-x-6">
         <a href="#" class="text-gray-700 hover:text-[#FF5733] font-medium">About</a>
@@ -43,8 +61,6 @@
         <a href="#" class="text-gray-700 hover:text-[#FF5733] font-medium">Uses</a>
     </div>
 </nav>
-
-
 
     <div class="max-w-5xl mx-auto py-16 flex flex-col items-start text-left gap-6">
       <!-- Profile Image -->
@@ -114,7 +130,6 @@
     </div>
     <div class="swiper-pagination mt-4"></div>
   </div>
-
   <!-- Individual Cards (Visible on Large Screens) -->
   <div class="hidden lg:flex lg:flex-wrap lg:justify-center lg:gap-6">
     <div class="flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
@@ -154,21 +169,34 @@
     </div>
   </div>
 
+<!-- Project section -->
+
+  <section id="projects" class="container mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold text-center text-gray-900">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+      <div class="p-4 bg-white border border-gray-200 rounded-lg shadow-md hidden-card">Project 1</div>
+      <div class="p-4 bg-white border border-gray-200 rounded-lg shadow-md hidden-card">Project 2</div>
+      <div class="p-4 bg-white border border-gray-200 rounded-lg shadow-md hidden-card">Project 3</div>
+      <div class="p-4 bg-white border border-gray-200 rounded-lg shadow-md hidden-card">Project 4</div>
+      <div class="p-4 bg-white border border-gray-200 rounded-lg shadow-md hidden-card">Project 5</div>
+      <div class="p-4 bg-white border border-gray-200 rounded-lg shadow-md hidden-card">Project 6</div>
+    </div>
+  </section>
 
 <!-- Footer Section -->
-
-<footer class="w-full  border-gray-200 py-4">
-  <div class="container mx-auto flex justify-between items-center text-sm text-gray-500">
-      <nav class="flex space-x-6">
-        <a href="#" class="text-gray-700 hover:text-[#FF5733] font-medium">About</a>
-        <a href="#projects" class="text-gray-700 hover:text-[#FF5733] font-medium">Projects</a>
-        <a href="#" class="text-gray-700 hover:text-[#FF5733] font-medium">Skills</a>
-        <a href="#" class="text-gray-700 hover:text-[#FF5733] font-medium">Education</a>
-        <a href="#" class="text-gray-700 hover:text-[#FF5733] font-medium">Uses</a>
-      </nav>
-      <p>© 2025 Alonzo Clint. All rights reserved.</p>
+<footer class="w-full border-t border-gray-200 py-4">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+    <nav class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-center md:text-left">
+      <a href="#" class="text-gray-700 hover:text-[#FF5733] font-medium">About</a>
+      <a href="#projects" class="text-gray-700 hover:text-[#FF5733] font-medium">Projects</a>
+      <a href="#" class="text-gray-700 hover:text-[#FF5733] font-medium">Skills</a>
+      <a href="#" class="text-gray-700 hover:text-[#FF5733] font-medium">Education</a>
+      <a href="#" class="text-gray-700 hover:text-[#FF5733] font-medium">Uses</a>
+    </nav>
+    <p class="mt-4 md:mt-0 text-center md:text-right">© 2025 Alonzo Clint. All rights reserved.</p>
   </div>
 </footer>
+
 
 
 </div>
