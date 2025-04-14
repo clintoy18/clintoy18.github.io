@@ -49,28 +49,31 @@
       </style>
 
 </head>
-<body class="bg-gray-50">
-
-  <div class="container mx-auto px-6 py-6 bg-white border border-gray-300 shadow-md">
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+  <div class="container bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 mx-auto px-6 py-6 border border-gray-300 shadow-md">
     <nav class="flex justify-center mt-6" aria-label="Main Navigation">
-    <div class="bg-white shadow-md border border-gray-100 rounded-full px-6 py-2 flex space-x-6">
-        <a href="#" class="text-gray-700 hover:text-[#FF5733] font-medium">About</a>
-        <a href="#projects" class="text-gray-700 hover:text-[#FF5733] font-medium">Projects</a>
-        <a href="#" class="text-gray-700 hover:text-[#FF5733] font-medium">Skills</a>
-        <a href="#" class="text-gray-700 hover:text-[#FF5733] font-medium">Contact</a>
+    <div class="shadow-md border border-gray-100 rounded-full px-6 py-2 flex space-x-6">
+        <a href="#" class="text-gray-900 dark:text-gray-100 hover:text-[#FF5733] font-medium">About</a>
+        <a href="#projects" class="text-gray-900 dark:text-gray-100 hover:text-[#FF5733] font-medium">Projects</a>
+        <a href="#" class="text-gray-900 dark:text-gray-100 hover:text-[#FF5733] font-medium">Skills</a>
+        <a href="#" class="text-gray-900 dark:text-gray-100 hover:text-[#FF5733] font-medium">Contact</a>
     </div>
+    <a id="toggle-dark" class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-4 py-2 rounded-full shadow-md hover:bg-gray-300 dark:hover:bg-gray-600 transition duration-300 ml-4 flex items-center justify-center">
+        <i class="fas fa-moon"></i>
+    </a>
 </nav>
+
 
     <div class="max-w-5xl mx-auto py-16 flex flex-col items-start text-left gap-6">
       <!-- Profile Image -->
       <img class="w-24 h-24 rounded-full object-cover" src="/images/alonzo8r.JPG" alt="Clint Alonzo">
       <!-- Text Content -->
       <div>
-        <h1 class="text-5xl font-sans font-bold text-gray-900">
+        <h1 class="text-5xl font-sans font-bold dark:bg-gray-900 text-gray-900 dark:text-gray-100 ">
 
               Aspiring Software Engineer,<br> developer.
           </h1>
-          <p class="text-gray-600 mt-4">
+          <p class="mt-4">
               I'm Clint, an aspiring software engineer passionate about building innovative solutions.<br>
                I specialize in full-stack development and love creating projects that make a difference.
           </p>
@@ -86,159 +89,183 @@
   </div>
   
 <!-- Skills Card -->
-  <h2 class="text-2xl font-bold text-center text-gray-900 mb-4">Tech Stacks</h2>
+  <h2 class="text-2xl font-bold text-center  text-gray-900 dark:text-gray-100 mb-4">Tech Stacks</h2>
 
   <!-- Swiper (Visible on Small Screens) -->
-  <div class="swiper mySwiper block lg:hidden h-[200px]">
-    <div class="swiper-wrapper">
+  <div class=" swiper mySwiper block lg:hidden h-[200px]">
+    <div class="dark:bg-gray-900 text-gray-900 dark:text-gray-100  swiper-wrapper">
       <!-- Skill Items -->
+
+      <div class="swiper-slide flex flex-col items-center text-center p-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/640px-Git_icon.svg.png" alt="Git" class="w-12 h-12 mb-2">
+        <h3 class="text-xl font-semibold">Git</h3>
+        <p>Intermediate to Advance proficiency</p>
+      </div>
+
       <div class="swiper-slide flex flex-col items-center text-center p-4">
         <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel" class="w-12 h-12 mb-2">
         <h3 class="text-xl font-semibold">Laravel</h3>
-        <p class="text-gray-600">Advanced proficiency</p>
+        <p>Intermediate to Advance (Specialization)</p>
       </div>
 
       <div class="swiper-slide flex flex-col items-center text-center p-4">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="w-16 h-16 mb-3">
         <h3 class="text-xl font-semibold">PHP</h3>
-        <p class="text-gray-600">Expert level</p>
+        <p>Intermediate to Advance</p>
       </div>
 
       <div class="swiper-slide flex flex-col items-center text-center p-4">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-16 h-16 mb-3">
         <h3 class="text-xl font-semibold">Tailwind CSS</h3>
-        <p class="text-gray-600">Highly proficient</p>
+        <p >Highly proficient</p>
       </div>
 
       <div class="swiper-slide flex flex-col items-center text-center p-4">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="w-16 h-16 mb-3">
         <h3 class="text-xl font-semibold">C#</h3>
-        <p class="text-gray-600">Intermediate knowledge</p>
+        <p>Intermediate knowledge</p>
       </div>
 
       <div class="swiper-slide flex flex-col items-center text-center p-4">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-16 h-16 mb-3">
         <h3 class="text-xl font-semibold">Python</h3>
-        <p class="text-gray-600">Good understanding</p>
+        <p>Good understanding</p>
       </div>
     </div>
     <div class="swiper-pagination mt-4"></div>
   </div>
   <!-- Individual Cards (Visible on Large Screens) -->
-  <div class="hidden lg:flex lg:flex-wrap lg:justify-center lg:gap-6">
-    <div class="flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
+  <div class=" dark:bg-gray-900 text-gray-900 dark:text-gray-100 hidden lg:flex lg:flex-wrap lg:justify-center lg:gap-6">
+    <div class=" dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/640px-Git_icon.svg.png" alt="Git" class="w-12 h-12 mb-2">
+      <h3 class="text-xl font-semibold">Git</h3>
+      <p>Intermediate to Advance proficiency</p>
+    </div>
+    
+    <div class=" dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel" class="w-12 h-12 mb-2">
       <h3 class="text-xl font-semibold">Laravel</h3>
-      <p class="text-gray-600 text-sm">Intermediate to Advanced </p>
+      <p class="text-sm">Intermediate to Advanced (Specialization) </p>
     </div>
 
-
-    <div class="flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
+    <div class=" dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="w-16 h-16 mb-3">
       <h3 class="text-xl font-semibold">PHP</h3>
-      <p class="text-gray-600 text-sm">Intermediate</p>
+      <p class="text-sm">Intermediate</p>
     </div>
 
-    <div class="flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
+    <div class=" dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-16 h-16 mb-3">
       <h3 class="text-xl font-semibold">Tailwind CSS</h3>
-      <p class="text-gray-600 text-sm">Highly proficient</p>
+      <p class="text-sm">Intermediate</p>
     </div>
 
-    <div class="flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
+    <div class=" dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="w-16 h-16 mb-3">
       <h3 class="text-xl font-semibold">C#</h3>
-      <p class="text-gray-600 text-sm">Intermediate</p>
+      <p class=" text-sm">Good understanding</p>
     </div>
 
-    <div class="flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
+    <div class="dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-16 h-16 mb-3">
       <h3 class="text-xl font-semibold">Python</h3>
-      <p class="text-gray-600 text-sm">Good understanding</p>
+      <p class="text-sm">Good understanding</p>
     </div>
   </div>
 
 <!-- Project section -->
 <section id="projects" class="container mx-auto px-6 py-12">
-  <h2 class="text-3xl font-bold text-center text-gray-900">Projects</h2>
+  <h2 class="text-3xl font-bold text-center ">Projects</h2>
   
   <!-- Responsive Grid -->
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
       
       <!-- Project Card 1 -->
-      <div class="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+      <div class="dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <img src="images/pyScan.png" alt="Project Image" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="p-4">
+              <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Attendance Checker using RFID</h3>
+              <p class=" mt-2">An RFID-based Attendance Checker built with Python Flask for real-time attendance tracking.</p>
+              <a href="https://github.com/clintoy18/Attendance-Scanner---Python-Flask" target="_blank">
+                <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View Project</button>
+              </a>
+            </div>
+      </div>
+
+    <!-- Project Card 2 -->
+    <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+      <img src="images/pyScan.png" alt="Project Image" class="w-full h-48 object-cover rounded-t-lg">
+      <div class="p-4">
+          <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">HomeOwners Subdivision Management System
+          </h3>
+          <p class="mt-2">A C# ASP.NET Core web app using Entity Framework Core, built to streamline subdivision or HOA operations with an all-in-one platform for homeowners, staff, and admins.</p>
+          <a href="https://github.com/clintoy18/HomeOwners-CasaMira-Web" target="_blank">
+            <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View Project</button>
+          </a>
+        </div>
+    </div>
+
+        <!-- Project Card 3 -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300">
           <img src="images/pyScan.png" alt="Project Image" class="w-full h-48 object-cover rounded-t-lg">
           <div class="p-4">
-              <h3 class="text-lg font-semibold text-gray-800">Attendance Checker using RFID</h3>
-              <p class="text-gray-600 mt-2">An RFID-based Attendance Checker built with Python Flask for real-time attendance tracking.</p>
-              <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View Project</button>
+              <h3 class="text-2xl font-semibold">Sit-In Monitoring System</h3>
+              <p class="mt-2">A school project using Vanilla PHP and JavaScript designed for the College of Computer Studies. It manages and monitors student sit-in sessions, offering features like room reservations, session tracking, and feedback management for both admins and students.
+                </p>
+              <a href="https://github.com/clintoy18/CCS-Sitting-Monitoring-System---PHP" target="_blank">
+                <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View Project</button>
+              </a>
+            </div>
+        </div>
+   
+          <!-- Project Card 4-->
+          <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+            <img src="images/pyScan.png" alt="Project Image" class="w-full h-48 object-cover rounded-t-lg">
+            <div class="p-4">
+                <h3 class="text-2xl font-semibold text-gray-800">Attendance Checker using RFID</h3>
+                <p class="mt-2">An RFID-based Attendance Checker built with Python Flask for real-time attendance tracking.</p>
+                <a href="" target="_blank">
+                  <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View Project</button>
+                </a>
+              </div>
           </div>
-      </div>
-
-      <!-- Project Card 2 -->
-      <div class="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-          <img src="images/pyScan.png" alt="Project Image" class="w-full h-48 object-cover rounded-t-lg">
-          <div class="p-4">
-              <h3 class="text-lg font-semibold text-gray-800">Project 2</h3>
-              <p class="text-gray-600 mt-2">A brief description of your project.</p>
-              <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View Project</button>
+           <!-- Project Card 5 -->
+           <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+            <img src="images/pyScan.png" alt="Project Image" class="w-full h-48 object-cover rounded-t-lg">
+            <div class="p-4">
+                <h3 class="text-2xl font-semibold text-gray-800">Attendance Checker using RFID</h3>
+                <p class="mt-2">An RFID-based Attendance Checker built with Python Flask for real-time attendance tracking.</p>
+                <a href="" target="_blank">
+                  <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View Project</button>
+                </a>
+              </div>
           </div>
-      </div>
 
-      <!-- Project Card 3 -->
-      <div class="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-          <img src="https://via.placeholder.com/300" alt="Project Image" class="w-full h-48 object-cover rounded-t-lg">
-          <div class="p-4">
-              <h3 class="text-lg font-semibold text-gray-800">Project 3</h3>
-              <p class="text-gray-600 mt-2">A brief description of your project.</p>
-              <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View Project</button>
+           <!-- Project Card 3 -->
+           <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+            <img src="images/pyScan.png" alt="Project Image" class="w-full h-48 object-cover rounded-t-lg">
+            <div class="p-4">
+                <h3 class="text-2xl  font-semibold text-gray-800">Attendance Checker using RFID</h3>
+                <p class="mt-2">An RFID-based Attendance Checker built with Python Flask for real-time attendance tracking.</p>
+                <a href="" target="_blank">
+                  <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View Project</button>
+                </a>
+              </div>
           </div>
-      </div>
-
-      <!-- Project Card 4 -->
-      <div class="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-          <img src="https://via.placeholder.com/300" alt="Project Image" class="w-full h-48 object-cover rounded-t-lg">
-          <div class="p-4">
-              <h3 class="text-lg font-semibold text-gray-800">Project 4</h3>
-              <p class="text-gray-600 mt-2">A brief description of your project.</p>
-              <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View Project</button>
-          </div>
-      </div>
-
-      <!-- Project Card 5 -->
-      <div class="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-          <img src="https://via.placeholder.com/300" alt="Project Image" class="w-full h-48 object-cover rounded-t-lg">
-          <div class="p-4">
-              <h3 class="text-lg font-semibold text-gray-800">Project 5</h3>
-              <p class="text-gray-600 mt-2">A brief description of your project.</p>
-              <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View Project</button>
-          </div>
-      </div>
-
-      <!-- Project Card 6 -->
-      <div class="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-          <img src="https://via.placeholder.com/300" alt="Project Image" class="w-full h-48 object-cover rounded-t-lg">
-          <div class="p-4">
-              <h3 class="text-lg font-semibold text-gray-800">Project 6</h3>
-              <p class="text-gray-600 mt-2">A brief description of your project.</p>
-              <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View Project</button>
-          </div>
-      </div>
-
-  </div>
+    </div>
 </section>
 
 
 <!-- Footer Section -->
-<footer class="w-full border-t border-gray-200 py-4">
+<footer class="w-full border-t border-gray-200 dark:border-gray-700 py-4 bg-gray-50 dark:bg-gray-900">
   <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
     <nav class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-center md:text-left">
-      <a href="#" class="text-gray-700 hover:text-[#FF5733] font-medium">About</a>
-      <a href="#projects" class="text-gray-700 hover:text-[#FF5733] font-medium">Projects</a>
-      <a href="#" class="text-gray-700 hover:text-[#FF5733] font-medium">Skills</a>
-      <a href="#" class="text-gray-700 hover:text-[#FF5733] font-medium">Contact</a>
+      <a href="#" class="text-gray-900 dark:text-gray-100 hover:text-[#FF5733] font-medium">About</a>
+      <a href="#projects" class="text-gray-900 dark:text-gray-100 hover:text-[#FF5733] font-medium">Projects</a>
+      <a href="#" class="text-gray-900 dark:text-gray-100 hover:text-[#FF5733] font-medium">Skills</a>
+      <a href="#" class="text-gray-900 dark:text-gray-100 hover:text-[#FF5733] font-medium">Contact</a>
     </nav>
-    <p class="mt-4 md:mt-0 text-center md:text-right">© 2025 Alonzo Clint. All rights reserved.</p>
+    <p class=" text-gray-900 dark:text-gray-100 mt-4 md:mt-0 text-center md:text-right">© 2025 Alonzo Clint. All rights reserved.</p>
   </div>
 </footer>
 
@@ -249,6 +276,10 @@
 </html>
 
 <script>
+   tailwind.config = {
+    darkMode: 'class'
+  }
+  
   document.addEventListener("DOMContentLoaded", function () {
     const hiddenCards = document.querySelectorAll(".hidden-card");
 
@@ -287,6 +318,16 @@
       },
     });
   });
+
+  const toggleBtn = document.getElementById('toggle-dark');
+        toggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+        });
+
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+        }
 </script>
 
 
