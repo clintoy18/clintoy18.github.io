@@ -1,461 +1,212 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicare Advantage Smart-Quote</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <title>Document</title>
-    <style>
-     
-      html {
-        scroll-behavior: smooth;
-      }
-      .hidden-card {
-        opacity: 0;
-        transform: translateY(50px);
-        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-      }
-      .visible-card {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      @media (max-width: 768px) {
-        .container {
-          padding: 1rem;
-        }
-        .flex-wrap {
-          flex-direction: column;
-          align-items: center;
-        }
-      }
-      @media (max-width: 640px) {
-        h1 {
-          font-size: 2rem;
-        }
-        .text-xl {
-          font-size: 1rem;
-        }
-        .w-40 {
-          width: 100%;
-        }
-        .grid-cols-2 {
-          grid-template-columns: repeat(1, minmax(0, 1fr));
-        }
-      }
-      </style>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-  <div class="container bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 mx-auto px-6 py-6 border border-gray-300 shadow-md">
-    <nav class="flex justify-center items-center mt-6 px-4" aria-label="Main Navigation">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center max-w-xl">
-        
-        <!-- Navigation Links -->
-        <div class="shadow-md border border-gray-100 rounded-full px-6 py-2 flex  justify-center gap-x-4 gap-y-2">
-          <a href="#about" class="text-gray-900 dark:text-gray-100 hover:text-[#FF5733] font-medium">About</a>
-          <a href="#projects" class="text-gray-900 dark:text-gray-100 hover:text-[#FF5733] font-medium">Projects</a>
-          <a href="#skills" class="text-gray-900 dark:text-gray-100 hover:text-[#FF5733] font-medium">Skills</a>
-          <a href="#contact" class="text-gray-900 dark:text-gray-100 hover:text-[#FF5733] font-medium">Contact</a>
-        </div>
-    
-        <!-- Dark Mode Toggle -->
-        <a id="toggle-dark"
-           class="w-12 h-12 dark:bg-gray-700 text-gray-800 dark:text-white px-4 py-2 
-                  rounded-full shadow-md hover:bg-gray-300 dark:hover:bg-gray-600 
-                  transition duration-300 flex flex-col  items-center justify-center mx-auto sm:mx-0">
-          <i class="fas fa-moon"></i>
-        </a>
-        
-      </div>
-    </nav>
+<body class="bg-gray-50 font-sans">
 
-
-    <div class="max-w-5xl mx-auto py-16 flex flex-col items-start text-left gap-6">
-      <!-- Profile Image -->
-      <img class="w-24 h-24 rounded-full object-cover" src="/images/alonzo8r.JPG" alt="Clint Alonzo">
-      <!-- Text Content -->
-      <div>
-        <h1 class="text-5xl font-sans font-bold dark:bg-gray-900 text-gray-900 dark:text-gray-100 ">
-
-              Aspiring Software Engineer,<br> developer.
-          </h1>
-          <p class="mt-4">
-              I'm Clint, an aspiring software engineer passionate about building innovative solutions.<br>
-               I specialize in full-stack development and love creating projects that make a difference.
-          </p>
-          <!-- Social Links -->
-          <div class="flex space-x-4 mt-4">
-              <a href="#" class="text-gray-500 hover:text-black"><i class="fab fa-x-twitter"></i></a>
-              <a href="https://github.com/clintoy18" target="_blank" class="text-gray-500 hover:text-black">
-                <i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/clint-alonzo-a4737b2b1/" class="text-gray-500 hover:text-black"><i class="fab fa-linkedin"></i></a>
-          </div>
-      </div>
-  
-  </div>
-  
-<!-- Skills Card -->
-  <h2 class="text-2xl font-bold text-center text-gray-900 dark:text-gray-100 mb-4"  id="skills" >Tech Stacks</h2>
-  <!-- Swiper (Visible on Small Screens) -->
-  <div class=" swiper mySwiper block lg:hidden h-[200px]" >
-    <div class="dark:bg-gray-900 text-gray-900 dark:text-gray-100 swiper-wrapper">
-      <!-- Skill Items -->
-
-      <div class="swiper-slide flex flex-col items-center text-center p-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/640px-Git_icon.svg.png" alt="Git" class="w-12 h-12 mb-2">
-        <h3 class="text-xl font-semibold">Git</h3>
-        <p>Intermediate to Advance proficiency</p>
-      </div>
-
-      <div class="swiper-slide flex flex-col items-center text-center p-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel" class="w-12 h-12 mb-2">
-        <h3 class="text-xl font-semibold">Laravel</h3>
-        <p>Intermediate to Advance (Specialization)</p>
-      </div>
-
-      <div class="swiper-slide flex flex-col items-center text-center p-4">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="w-16 h-16 mb-3">
-        <h3 class="text-xl font-semibold">PHP</h3>
-        <p>Intermediate to Advance</p>
-      </div>
-
-      <div class="swiper-slide flex flex-col items-center text-center p-4">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-16 h-16 mb-3">
-        <h3 class="text-xl font-semibold">Tailwind CSS</h3>
-        <p >Highly proficient</p>
-      </div>
-
-      <div class="swiper-slide flex flex-col items-center text-center p-4">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="w-16 h-16 mb-3">
-        <h3 class="text-xl font-semibold">C#</h3>
-        <p>Intermediate knowledge</p>
-      </div>
-
-      <div class="swiper-slide flex flex-col items-center text-center p-4">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-16 h-16 mb-3">
-        <h3 class="text-xl font-semibold">Python</h3>
-        <p>Good understanding</p>
-      </div>
-    </div>
-    <div class="swiper-pagination mt-4"></div>
-  </div>
-  <!-- Individual Cards (Visible on Large Screens) -->
-  <div class=" dark:bg-gray-900 text-gray-900 dark:text-gray-100 hidden lg:flex lg:flex-wrap lg:justify-center lg:gap-6">
-    <div class=" dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/640px-Git_icon.svg.png" alt="Git" class="w-12 h-12 mb-2">
-      <h3 class="text-xl font-semibold">Git</h3>
-      <p>Intermediate to Advance proficiency</p>
-    </div>
-    
-    <div class=" dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel" class="w-12 h-12 mb-2">
-      <h3 class="text-xl font-semibold">Laravel</h3>
-      <p class="text-sm">Intermediate to Advanced (Specialization) </p>
-    </div>
-
-    <div class=" dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="w-16 h-16 mb-3">
-      <h3 class="text-xl font-semibold">PHP</h3>
-      <p class="text-sm">Intermediate to Advance</p>
-    </div>
-
-    <div class=" dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-16 h-16 mb-3">
-      <h3 class="text-xl font-semibold">Tailwind CSS</h3>
-      <p class="text-sm">>Highly proficiente</p>
-    </div>
-
-    <div class=" dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="w-16 h-16 mb-3">
-      <h3 class="text-xl font-semibold">C#</h3>
-      <p class=" text-sm">Intermediate knowledge</p>
-    </div>
-
-    <div class="dark:bg-gray-900 text-gray-900 dark:text-gray-100  flex flex-col items-center text-center p-4 bg-gray-100 rounded-lg w-40">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-16 h-16 mb-3">
-      <h3 class="text-xl font-semibold">Python</h3>
-      <p class="text-sm">Good understanding</p>
-    </div>
-  </div>
-
-<!-- Project section -->
-<section id="projects" class="container mx-auto px-6 py-12">
-  <h2 class="text-3xl font-bold text-center ">Projects</h2>
-  
-  <!-- Responsive Grid -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-      
-      <!-- Project Card 1 -->
-      <div class="dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300 flex flex-col h-full">
-        <img src="images/pyScan.png" alt="Project Image" class="w-full h-48 object-cover rounded-t-lg">
-        <div class="p-4 flex flex-col flex-grow">
-          <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Attendance Checker using RFID</h3>
-          <p class="mt-2 text-gray-600 dark:text-gray-300">An RFID-based Attendance Checker built with Python Flask for real-time attendance tracking.</p>
-          <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Python · Flask · sqlite3 · GitHub</p>
-          <div class="mt-auto pt-4">
-            <a href="https://github.com/clintoy18/Attendance-Scanner---Python-Flask" target="_blank">
-              <button class="px-4 py-2 bg-blue-600 text-white w-full rounded-lg hover:bg-blue-700 transition">View Github</button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project Card 2 -->
-      <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300 flex flex-col h-full">
-        <img src="images/sitin.png" alt="Project Image" class="w-full h-48 object-cover rounded-t-lg">
-        <div class="p-4 flex flex-col flex-grow">
-          <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Sit-In Monitoring System</h3>
-          <p class="mt-2 text-gray-600 dark:text-gray-300">A school project using Vanilla PHP and JavaScript designed for the College of Computer Studies. It manages and monitors student sit-in sessions, offering features like room reservations, session tracking, and feedback management for both admins and students.</p>
-          <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">PHP · JavaScript · MySQL · GitHub</p>
-          <div class="mt-auto pt-4">
-            <a href="https://github.com/clintoy18/CCS-Sitting-Monitoring-System---PHP" target="_blank">
-              <button class="px-4 py-2 bg-blue-600 text-white w-full rounded-lg hover:bg-blue-700 transition">View Github</button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project Card 3 -->
-      <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300 flex flex-col h-full">
-        <img src="images/casamira.png" alt="Project Image" class="w-full h-48 object-cover rounded-t-lg">
-        <div class="p-4 flex flex-col flex-grow">
-          <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">HomeOwners Subdivision Management System</h3>
-          <p class="mt-2 text-gray-600 dark:text-gray-300">A school project built with C# ASP.NET Core web app using Entity Framework Core, built to streamline subdivision or HOA operations with an all-in-one platform for homeowners, staff, and admins.</p>
-          <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">C# · ASP.NET Core · EF Core · SQL Server · GitHub</p>
-          <div class="mt-auto pt-4">
-            <a href="https://github.com/clintoy18/HomeOwners-CasaMira-Web" target="_blank">
-              <button class="px-4 py-2 bg-blue-600 text-white w-full rounded-lg hover:bg-blue-700 transition">View Github</button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project Card 4 -->
-      <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300 flex flex-col h-full">
-        <img src="images/thrift-it.png" alt="Project Image" class="w-full h-48 object-cover rounded-t-lg">
-        <div class="p-4 flex flex-col flex-grow">
-          <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Thrift-IT <i>On-going</i></h3>
-          <p class="mt-2 text-gray-600 dark:text-gray-300">A capstone project promoting sustainable fashion by enabling users to buy, sell, and donate thrifted clothes and book upcycling appointments. Integrated with real-time chat system.</p>
-          <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Laravel · Blade · MySQL · Pusher · GitHub</p>
-          <div class="mt-auto pt-4">
-            <a href="https://github.com/clintoy18/Thrift-It-Capstone-Project" target="_blank">
-              <button class="px-4 py-2 bg-blue-600 text-white w-full rounded-lg hover:bg-blue-700 transition">View on GitHub</button>
-            </a>
-          </div>
-        </div>
-      </div>
-          <!-- Project Card 5 -->
-        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md hover:shadow-xl transition duration-300 flex flex-col h-full">
-          <img src="images/employee-system.png" alt="Project Image" class="w-full h-48 object-cover rounded-t-lg">
-          <div class="p-4 flex flex-col flex-grow">
-            <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Employee Management System</h3>
-            <p class="mt-2 text-gray-600 dark:text-gray-300">A full-stack project for onboarding, transferring, and managing employees with secure user authentication and role-based admin controls.</p>
-            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Node.js · Express · MySQL · Angular · JWT · Postman</p>
-            <div class="mt-auto pt-4">
-              <a href="https://github.com/clintoy18/Employee-Management-System" target="_blank">
-                <button class="px-4 py-2 bg-blue-600 text-white w-full rounded-lg hover:bg-blue-700 transition">View on GitHub</button>
-              </a>
+    <header class="bg-blue-900 text-white p-6 shadow-md">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold italic tracking-tighter">MEDICARE<span class="text-blue-400 font-light">PRO</span></h1>
+                <p class="text-xs text-blue-200">Automated Part C Enrollment Engine</p>
             </div>
-          </div>
+            <div class="text-right hidden md:block">
+                <p class="text-xs uppercase font-bold text-blue-300">AEP Enrollment Period</p>
+                <p class="text-sm">Oct 15 — Dec 7</p>
+            </div>
         </div>
-    </div>
-</section>
+    </header>
 
-<!-- About Me Section -->
-<section id="about" class="dark:bg-gray-900 py-16 px-6 md:px-16">
-  <div class="max-w-screen-xl mx-auto">
-    <!-- Title -->
-    <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100">About Me</h2>
-      <p class="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-        Hi, I'm <span class="font-semibold">Clint Alonzo</span>, a freelance web developer based in Cebu City, Philippines. 
-        I specialize in <span class="font-semibold">Laravel development</span> and enjoy building clean, efficient, and scalable solutions for clients and communities.
-      </p>
-    </div>
+    <main class="max-w-6xl mx-auto py-10 px-4 grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        <div class="lg:col-span-7 space-y-8">
+            <div class="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="p-8 border-b bg-slate-50 flex justify-between items-center">
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-800">1. Customer Identity</h2>
+                        <p class="text-sm text-slate-500">Required for official enrollment</p>
+                    </div>
+                    <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase">Step 1 of 2</span>
+                </div>
+                <div class="p-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="text-xs font-bold text-slate-400 uppercase tracking-widest">Full Name</label>
+                        <input type="text" id="cust-name" oninput="updateSummary()" class="w-full mt-1 p-3 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500" placeholder="Juan Dela Cruz">
+                    </div>
+                    <div>
+                        <label class="text-xs font-bold text-slate-400 uppercase tracking-widest">Zip Code</label>
+                        <input type="text" id="cust-zip" oninput="updateSummary()" class="w-full mt-1 p-3 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500" placeholder="1000">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="text-xs font-bold text-slate-400 uppercase tracking-widest">Email Address</label>
+                        <input type="email" id="cust-email" class="w-full mt-1 p-3 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500" placeholder="juan@example.com">
+                    </div>
+                </div>
+            </div>
 
-    <!-- Content Layout -->
-    <div class="flex flex-col  items-center gap-10">
-      <!-- Bio Details -->
-      <div class="text-left max-w-2xl">
-        <!-- Journey -->
-        <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100">My Journey</h3>
-        <p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed">
-          Over the past four years at the University of Cebu, I’ve honed my expertise in 
-          <span class="font-medium">full-stack development</span>. My path has been fueled by continuous learning, hands-on projects, 
-          and a strong passion for creating impactful digital experiences.
-        </p>
+            <div class="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="p-8 border-b bg-slate-50 flex justify-between items-center">
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-800">2. Plan Assessment</h2>
+                        <p class="text-sm text-slate-500">Medicare Advantage (Part C) Coverage</p>
+                    </div>
+                    <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase">Step 2 of 2</span>
+                </div>
 
-        <!-- What I Do -->
-        <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mt-8">What I Do</h3>
-        <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 text-gray-600 dark:text-gray-300">
-          <li class="flex items-center gap-2"><span class="text-blue-500">✔</span> Full-Stack Development</li>
-          <li class="flex items-center gap-2"><span class="text-blue-500">✔</span> Back-End Development</li>
-          <li class="flex items-center gap-2"><span class="text-blue-500">✔</span> Front-End Development</li>
-          <li class="flex items-center gap-2"><span class="text-blue-500">✔</span> Small to Intermediate Scale Projects</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+                <div class="p-8 space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex items-center gap-3 p-4 bg-green-50 border border-green-100 rounded-xl">
+                            <input type="checkbox" checked disabled class="w-5 h-5 text-green-600 rounded">
+                            <span class="text-sm font-medium text-green-800">Enrolled in Part A & B</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-4 bg-blue-50 border border-blue-100 rounded-xl">
+                            <input type="checkbox" id="esrd" class="w-5 h-5 text-blue-600 rounded">
+                            <span class="text-sm font-medium text-blue-800">No ESRD diagnosis?</span>
+                        </div>
+                    </div>
 
+                    <div>
+                        <label class="text-xs font-bold text-slate-400 uppercase tracking-widest">Select Network Type</label>
+                        <div class="grid grid-cols-2 gap-4 mt-2">
+                            <button onclick="setNetwork('HMO')" id="btn-hmo" class="p-4 border-2 rounded-2xl text-left hover:border-blue-500 transition-all border-blue-600 bg-blue-50">
+                                <p class="font-bold text-slate-800">HMO</p>
+                                <p class="text-xs text-slate-500">In-network focus.</p>
+                            </button>
+                            <button onclick="setNetwork('PPO')" id="btn-ppo" class="p-4 border-2 rounded-2xl text-left hover:border-blue-500 transition-all border-slate-200">
+                                <p class="font-bold text-slate-800">PPO</p>
+                                <p class="text-xs text-slate-500">Provider flexibility.</p>
+                            </button>
+                        </div>
+                    </div>
 
-<!-- Extracurricular Activities Section -->
-<section id="activities" class="dark:bg-gray-900 py-16 px-6 md:px-16">
-  <div class="max-w-screen-xl mx-auto text-center">
-    <h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-6">Extracurricular Activities</h2>
-    <p class="text-lg text-gray-700 dark:text-gray-300 mb-10">Beyond academics, I actively participate in various competitions and community service that strengthen my skills and leadership.</p>
+                    <div class="p-5 border-2 border-dashed border-slate-200 rounded-2xl">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i class="fas fa-stethoscope text-orange-500"></i>
+                            <h3 class="font-bold text-sm">Chronic Condition? (SNP Eligibility)</h3>
+                        </div>
+                        <select id="snp-type" onchange="updateSummary()" class="w-full p-3 border rounded-xl bg-white text-sm outline-none">
+                            <option value="none">Standard Enrollment</option>
+                            <option value="csnp">Diabetes / Cardiovascular (C-SNP)</option>
+                            <option value="dsnp">Medicare & Medicaid (D-SNP)</option>
+                        </select>
+                    </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
-      <!-- Activity 1 -->
-      <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-lg shadow-md">
-        <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-2">🏆 2nd Place – UC CCS Days Hackathon 2025</h3>
-        <p class="text-gray-600 dark:text-gray-300">Collaborated with a team to build a functional prototype within 24 hours under pressure, showcasing creativity, problem-solving, and full-stack development.</p>
-      </div>
+                    <div>
+                        <label class="text-xs font-bold text-slate-400 uppercase tracking-widest">Supplemental Benefits (Add-ons)</label>
+                        <div class="space-y-3 mt-2">
+                            <label class="flex items-center justify-between p-4 border rounded-xl hover:bg-slate-50 cursor-pointer">
+                                <span class="text-sm font-medium"><i class="fas fa-tooth mr-2 text-blue-400"></i> Dental (Comprehensive)</span>
+                                <input type="checkbox" class="addon-check w-5 h-5" value="25" onchange="calc()">
+                            </label>
+                            <label class="flex items-center justify-between p-4 border rounded-xl hover:bg-slate-50 cursor-pointer">
+                                <span class="text-sm font-medium"><i class="fas fa-glasses mr-2 text-blue-400"></i> Vision & Hearing</span>
+                                <input type="checkbox" class="addon-check w-5 h-5" value="15" onchange="calc()">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-      <!-- Activity 2 -->
-      <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-lg shadow-md">
-        <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-2">🎖️ 5th Place – C Programming Competition 2023</h3>
-        <p class="text-gray-600 dark:text-gray-300">Demonstrated strong logic-building and algorithmic thinking in a timed programming contest focused on C language problem sets.</p>
-      </div>
+        <div class="lg:col-span-5">
+            <div class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden sticky top-10">
+                <div class="bg-blue-900 p-8 text-white">
+                    <h3 class="text-blue-300 text-xs font-bold uppercase tracking-widest mb-2">Review Enrollment</h3>
+                    <div class="flex justify-between items-end">
+                        <h2 id="final-price" class="text-6xl font-black">$0.00</h2>
+                        <span class="text-blue-300 mb-2">/ month</span>
+                    </div>
+                </div>
+                
+                <div class="p-8 space-y-6">
+                    <div id="customer-summary" class="bg-slate-50 p-4 rounded-xl border space-y-2">
+                        <p class="text-xs text-slate-400 uppercase font-bold">Applicant Information</p>
+                        <p class="text-sm font-bold text-slate-700">Name: <span id="sum-name" class="font-normal text-slate-600">---</span></p>
+                        <p class="text-sm font-bold text-slate-700">Region: <span id="sum-zip" class="font-normal text-slate-600">---</span></p>
+                        <p class="text-sm font-bold text-slate-700">Plan: <span id="sum-plan" class="font-normal text-slate-600">HMO Standard</span></p>
+                    </div>
 
-      <!-- Activity 3 -->
-      <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-lg shadow-md">
-        <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-2">💻 UC ICT Congress Hackathon Representative</h3>
-        <p class="text-gray-600 dark:text-gray-300">Represented the university in a inter-campus hackathon event. Worked under time pressure with a team to deliver a full-stack solution demonstrating innovation and real-world application.</p>
-      </div>
+                    <div id="benefit-list" class="space-y-3">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <p class="text-sm text-slate-600 italic">"This plan eliminates the unknown 20% costs."</p>
+                        </div>
+                        <div id="dynamic-benefit" class="text-blue-600 text-xs font-bold bg-blue-50 p-3 rounded-lg border border-blue-100">
+                            HMO: Requires Primary Care Doctor referrals.
+                        </div>
+                    </div>
 
-      <!-- Activity 4 -->
-      <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-lg shadow-md">
-        <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-2">🧑‍⚖️ SK Councilor (2023 – Present)</h3>
-        <p class="text-gray-600 dark:text-gray-300">
-          Serving the youth of Barangay Ermita by organizing community programs, leading local initiatives, and advocating for youth empowerment and development. Spearheaded the barangay's digital innovation efforts through projects like <strong>SKLoud</strong>, digital registration forms, and social media campaigns to enhance transparency and engagement.
-        </p>
-      </div>
+                    <div class="pt-6 border-t">
+                        <button onclick="submitLead()" id="submit-btn" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 rounded-2xl shadow-lg transition-all transform hover:scale-[1.02] flex items-center justify-center gap-2">
+                            <span>SUBMIT QUOTE REQUESTS</span>
+                            <i class="fas fa-paper-plane text-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    </div>
-  </div>
-</section>
+    <script>
+        let network = 'HMO';
 
+        function updateSummary() {
+            const name = document.getElementById('cust-name').value;
+            const zip = document.getElementById('cust-zip').value;
+            const snp = document.getElementById('snp-type').options[document.getElementById('snp-type').selectedIndex].text;
 
+            document.getElementById('sum-name').innerText = name || "---";
+            document.getElementById('sum-zip').innerText = zip || "---";
+            document.getElementById('sum-plan').innerText = `${network} (${snp})`;
+        }
 
-<!-- Contact Section -->
-<section id="contact" class=" bg-white dark:bg-gray-900 py-16 px-6 md:px-16">
-  <div class=" max-w-screen-md mx-auto text-center">
-    <h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-6">Contact Me</h2>
-    <p class="text-lg text-gray-600 dark:text-gray-300 mb-10">Feel free to reach out via email. I look forward to connecting with you!</p>
+        function setNetwork(type) {
+            network = type;
+            document.getElementById('btn-hmo').className = type === 'HMO' ? 'p-4 border-2 rounded-2xl text-left border-blue-600 bg-blue-50' : 'p-4 border-2 rounded-2xl text-left border-slate-200';
+            document.getElementById('btn-ppo').className = type === 'PPO' ? 'p-4 border-2 rounded-2xl text-left border-blue-600 bg-blue-50' : 'p-4 border-2 rounded-2xl text-left border-slate-200';
+            
+            document.getElementById('dynamic-benefit').innerText = type === 'HMO' 
+                ? 'HMO: Generally lower costs by using a specific provider network.' 
+                : 'PPO: Flexibility to see any doctor, but costs are lower in-network.';
+            
+            updateSummary();
+            calc();
+        }
 
-    <!-- Email Address -->
-    <p class="text-lg font-bold text-gray-600 dark:text-gray-300 mb-4">
-      <span class="block"> <span id="email"></span></span>
-    </p>
+        function calc() {
+            let total = 0;
+            const addons = document.querySelectorAll('.addon-check:checked');
+            addons.forEach(a => total += parseInt(a.value));
+            
+            if(network === 'PPO') total += 15; 
+            
+            document.getElementById('final-price').innerText = `$${total.toFixed(2)}`;
+        }
 
- 
-  </div>
-</section>
+        function submitLead() {
+            const btn = document.getElementById('submit-btn');
+            const name = document.getElementById('cust-name').value;
 
-<script>
-  // JavaScript to obfuscate email and phone number
-  document.getElementById('email').innerHTML = 'aicsalonzo' + '@' + 'gmail' + '.' + 'com';
-</script>
+            if(!name) {
+                alert("Please enter customer name before syncing.");
+                return;
+            }
 
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> SYNCING...';
+            btn.classList.replace('bg-orange-500', 'bg-green-600');
 
-
-<!-- Footer Section -->
-<footer class="w-full border-t border-gray-200 dark:border-gray-700 py-4 bg-gray-50 dark:bg-gray-900">
-  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-    <nav class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-center md:text-left">
-      <a href="#about" class="text-gray-900 dark:text-gray-100 hover:text-[#FF5733] font-medium">About</a>
-      <a href="#projects" class="text-gray-900 dark:text-gray-100 hover:text-[#FF5733] font-medium">Projects</a>
-      <a href="#skills" class="text-gray-900 dark:text-gray-100 hover:text-[#FF5733] font-medium">Skills</a>
-      <a href="#contact" class="text-gray-900 dark:text-gray-100 hover:text-[#FF5733] font-medium">Contact</a>
-    </nav>
-    <p class=" text-gray-900 dark:text-gray-100 mt-4 md:mt-0 text-center md:text-right">© 2025 Alonzo Clint. All rights reserved.</p>
-  </div>
-</footer>
-</div>
-
-
-
-
-<script>
-  const swiper = new Swiper(".mySwiper", {
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-  });
-</script>
-
+            setTimeout(() => {
+                btn.innerHTML = '<i class="fas fa-check"></i> LEAD CREATED IN CRM';
+                alert(`Success! Enrollment for ${name} has been pushed to Salesforce.`);
+            }, 1500);
+        }
+        
+        calc();
+    </script>
 </body>
 </html>
-
-<script>
-   tailwind.config = {
-    darkMode: 'class'
-  }
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    const hiddenCards = document.querySelectorAll(".hidden-card");
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible-card");
-            }
-        });
-    }, { threshold: 0.4 });
-
-    hiddenCards.forEach((card) => observer.observe(card));
-});
-
-  window.addEventListener('DOMContentLoaded', () => {
-    const letters = document.querySelectorAll('.letter');
-    let delay = 0;
-    letters.forEach(letter => {
-      setTimeout(() => {
-        letter.classList.add('show');
-      }, delay);
-      delay += 200
-    });
-  });
-
-//swiper
-    document.addEventListener("DOMContentLoaded", function () {
-    new Swiper(".mySwiper", {
-      loop: true,
-      spaceBetween: 20,
-      slidesPerView: 1,
-      centeredSlides: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  });
-
-  const toggleBtn = document.getElementById('toggle-dark');
-        toggleBtn.addEventListener('click', () => {
-            document.documentElement.classList.toggle('dark');
-            localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
-        });
-
-        if (localStorage.getItem('theme') === 'dark') {
-            document.documentElement.classList.add('dark');
-        }
-</script>
-
-
-
-
-  
-
-
