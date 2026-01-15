@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medicare Pro | Official Enrollment</title>
+    <title>thehealthcareamerican | Life Insurance Quotes</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -30,8 +30,8 @@
     <header class="bg-navy text-white py-6 shadow-lg border-b-4 border-[#f17720]">
         <div class="max-w-4xl mx-auto px-6 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <i class="fas fa-shield-alt text-safety-orange text-2xl"></i>
-                <h1 class="text-xl font-black uppercase tracking-tight">Medicare<span class="text-slate-300 font-light">Direct</span></h1>
+                <i class="fas fa-flag-usa text-safety-orange text-2xl"></i>
+                <h1 class="text-xl font-black uppercase tracking-tight">thehealthcare<span class="text-slate-300 font-light">american</span></h1>
             </div>
             <div id="step-indicator" class="flex gap-2">
                 <div class="step-dot w-10 h-2 rounded-full bg-safety-orange transition-all"></div>
@@ -43,7 +43,7 @@
 
     <main class="max-w-4xl mx-auto py-12 px-4">
         <div class="text-center mb-6">
-            <span class="text-[10px] font-black tracking-[0.3em] text-slate-400 uppercase">Getting a Quote</span>
+            <span class="text-[10px] font-black tracking-[0.3em] text-slate-400 uppercase">Premium Life Insurance Quote</span>
         </div>
 
         <div class="bg-white rounded-[2.5rem] shadow-2xl shadow-slate-200/50 border border-slate-100 overflow-hidden">
@@ -51,7 +51,7 @@
             <div id="step-1" class="step-content active p-8 md:p-14">
                 <div class="text-center mb-10">
                     <h2 class="text-4xl font-bold text-navy">Estimate your cost in 30 seconds</h2>
-                    <p class="text-slate-500 mt-2 italic text-sm">* All fields are required unless noted.</p>
+                    <p class="text-slate-500 mt-2 italic text-sm">Personalized rates for American families</p>
                 </div>
                 
                 <div class="space-y-10">
@@ -62,7 +62,7 @@
                         </div>
                         <div class="space-y-3">
                             <label class="font-bold text-navy">Zip code</label>
-                            <input type="text" id="zip" maxlength="5" class="w-full p-4 bg-slate-50 border-2 border-slate-100 rounded-2xl outline-none focus:border-navy text-xl" placeholder="99950">
+                            <input type="text" id="zip" maxlength="5" class="w-full p-4 bg-slate-50 border-2 border-slate-100 rounded-2xl outline-none focus:border-navy text-xl" placeholder="90210">
                         </div>
                     </div>
 
@@ -81,44 +81,44 @@
                     </div>
 
                     <div class="space-y-4">
-                        <label class="font-bold text-navy">How would you describe your health? <i class="far fa-question-circle text-blue-400 ml-1"></i></label>
+                        <label class="font-bold text-navy">Health Description <i class="far fa-question-circle text-blue-400 ml-1"></i></label>
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                             <button onclick="toggleSelect(this, 'health')" class="option-card p-6 bg-white border-slate-200 rounded-2xl text-center space-y-2">
                                 <div class="text-blue-600"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></div>
-                                <p class="text-[10px] font-black uppercase tracking-widest">Excellent health</p>
+                                <p class="text-[10px] font-black uppercase tracking-widest">Excellent</p>
                             </button>
                             <button onclick="toggleSelect(this, 'health')" class="option-card p-6 bg-white border-slate-200 rounded-2xl text-center space-y-2">
                                 <div class="text-blue-600"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></div>
-                                <p class="text-[10px] font-black uppercase tracking-widest">Good health</p>
+                                <p class="text-[10px] font-black uppercase tracking-widest">Good</p>
                             </button>
                             <button onclick="toggleSelect(this, 'health')" class="option-card p-6 bg-white border-slate-200 rounded-2xl text-center space-y-2">
                                 <div class="text-blue-600"><i class="fas fa-heart"></i><i class="fas fa-heart"></i></div>
-                                <p class="text-[10px] font-black uppercase tracking-widest">Average health</p>
+                                <p class="text-[10px] font-black uppercase tracking-widest">Average</p>
                             </button>
                             <button onclick="toggleSelect(this, 'health')" class="option-card p-6 bg-white border-slate-200 rounded-2xl text-center space-y-2">
                                 <div class="text-blue-600"><i class="fas fa-heart"></i></div>
-                                <p class="text-[10px] font-black uppercase tracking-widest">Minor concerns</p>
+                                <p class="text-[10px] font-black uppercase tracking-widest">Fair</p>
                             </button>
                         </div>
                     </div>
 
                     <div class="space-y-4">
-                        <label class="font-bold text-navy">Have you smoked or used vape products in the past year?</label>
+                        <label class="font-bold text-navy">Vape or tobacco use in the past year?</label>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <button onclick="toggleSelect(this, 'smoke')" class="option-card p-6 bg-white border-slate-200 rounded-2xl flex items-center gap-4 text-xl font-bold">
                                 <div class="check-circle w-8 h-8 rounded-full border-2 border-slate-200 flex items-center justify-center bg-white"><i class="fas fa-check text-white text-xs"></i></div>
-                                No, don't use
+                                No, non-user
                             </button>
                             <button onclick="toggleSelect(this, 'smoke')" class="option-card p-6 bg-white border-slate-200 rounded-2xl flex items-center gap-4 text-xl font-bold">
                                 <div class="check-circle w-8 h-8 rounded-full border-2 border-slate-200 flex items-center justify-center bg-white"><i class="fas fa-check text-white text-xs"></i></div>
-                                Yes, currently use
+                                Yes, current user
                             </button>
                         </div>
                     </div>
 
                     <div class="pt-8 text-center md:text-left">
                         <button onclick="changeStep(2)" class="bg-blue-600 hover:bg-blue-700 text-white px-12 py-5 rounded-full font-black shadow-xl transition-all uppercase tracking-widest text-sm">
-                            See my estimate
+                            See My Estimate
                         </button>
                     </div>
                 </div>
@@ -126,12 +126,12 @@
 
             <div id="step-2" class="step-content p-8 md:p-14">
                 <div class="text-center mb-10">
-                    <h2 class="text-4xl font-bold text-navy">Your estimated rate for EssentialTerm Value<span class="text-sm align-top">®</span></h2>
+                    <h2 class="text-4xl font-bold text-navy">Your Estimated Life Insurance Rate</h2>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-slate-50 rounded-[2.5rem] p-10 border border-slate-100">
                     <div class="text-center lg:border-r border-slate-200 lg:pr-12 space-y-6">
-                        <p class="text-[10px] font-black uppercase tracking-widest text-slate-400">Monthly Cost</p>
+                        <p class="text-[10px] font-black uppercase tracking-widest text-slate-400">Monthly Premium</p>
                         <div class="flex items-start justify-center text-navy">
                             <span class="text-4xl font-black mt-4">$</span>
                             <span id="display-price" class="text-8xl font-black tracking-tighter">11</span>
@@ -141,15 +141,14 @@
                             </div>
                         </div>
                         <button onclick="changeStep(3)" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-black py-4 rounded-full shadow-lg transition-all flex items-center justify-center gap-3 uppercase tracking-widest text-sm">
-                            Speak with an advisor <i class="fas fa-arrow-right"></i>
+                            Speak with an Advisor <i class="fas fa-arrow-right"></i>
                         </button>
-                        <p class="text-xs text-slate-500 italic">Already have an advisor? Speak to them about EssentialTerm.</p>
                     </div>
 
                     <div class="space-y-10">
                         <div class="space-y-4">
                             <div class="flex justify-between items-center">
-                                <label class="font-bold text-navy text-sm">Coverage amount • <span id="coverage-val" class="text-green-600">$100,000</span></label>
+                                <label class="font-bold text-navy text-sm">Coverage amount • <span id="coverage-val" class="text-blue-600 font-black">$100,000</span></label>
                             </div>
                             <input type="range" min="100000" max="5000000" step="50000" value="100000" class="w-full" oninput="updateCoverage(this.value)">
                             <div class="flex justify-between text-[10px] font-bold text-slate-400">
@@ -158,7 +157,7 @@
                             </div>
                         </div>
                         <div class="space-y-4">
-                            <label class="font-bold text-navy text-sm">Years of coverage • <span id="years-val" class="text-green-600">10 years</span></label>
+                            <label class="font-bold text-navy text-sm">Term length (Years)</label>
                             <div class="flex gap-2">
                                 <button onclick="setYears(10, this)" class="year-btn flex-1 py-3 border-2 border-navy bg-blue-50 text-navy rounded-xl font-bold">10</button>
                                 <button onclick="setYears(15, this)" class="year-btn flex-1 py-3 border-2 border-slate-200 text-slate-500 rounded-xl font-bold">15</button>
@@ -174,11 +173,20 @@
                         <i class="fas fa-chevron-left text-xs"></i> Edit your answers
                     </button>
                     <div class="space-y-4">
-                        <p class="font-black text-navy uppercase text-xs tracking-widest">Why it's great</p>
-                        <div class="space-y-2">
-                            <p class="text-sm font-medium text-slate-600"><i class="fas fa-check text-green-500 mr-2"></i> Affordable death benefit protection</p>
-                            <p class="text-sm font-medium text-slate-600"><i class="fas fa-check text-green-500 mr-2"></i> Flexibility to convert to a permanent policy</p>
-                            <p class="text-sm font-medium text-slate-600"><i class="fas fa-check text-green-500 mr-2"></i> Fast and easy application process</p>
+                        <p class="font-black text-navy uppercase text-xs tracking-widest underline underline-offset-4 decoration-safety-orange">Benefits</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-50">
+                                <i class="fas fa-umbrella text-blue-500 mb-2"></i>
+                                <p class="text-xs font-bold text-slate-700">Financial Security</p>
+                            </div>
+                            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-50">
+                                <i class="fas fa-sync text-green-500 mb-2"></i>
+                                <p class="text-xs font-bold text-slate-700">Policy Flexibility</p>
+                            </div>
+                            <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-50">
+                                <i class="fas fa-bolt text-yellow-500 mb-2"></i>
+                                <p class="text-xs font-bold text-slate-700">Rapid Approval</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -187,57 +195,57 @@
             <div id="step-3" class="step-content p-8 md:p-14">
                 <div class="max-w-2xl mx-auto space-y-10">
                     <div class="text-center">
-                        <h2 class="text-4xl font-bold text-navy">Have a Financial Professional Contact You</h2>
+                        <h2 class="text-4xl font-bold text-navy tracking-tight">Connect with a Professional</h2>
                         <p class="text-slate-500 mt-2">* Required field</p>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="space-y-2">
                             <label class="text-sm font-bold text-navy">* First Name</label>
-                            <input type="text" class="w-full p-4 bg-slate-50 border-2 border-slate-200 rounded-xl outline-none focus:border-navy transition-all" placeholder="John">
+                            <input type="text" class="w-full p-4 bg-slate-50 border-2 border-slate-200 rounded-xl outline-none focus:border-navy transition-all" placeholder="Enter first name">
                         </div>
                         <div class="space-y-2">
                             <label class="text-sm font-bold text-navy">* Last Name</label>
-                            <input type="text" class="w-full p-4 bg-slate-50 border-2 border-slate-200 rounded-xl outline-none focus:border-navy transition-all" placeholder="Doe">
+                            <input type="text" class="w-full p-4 bg-slate-50 border-2 border-slate-200 rounded-xl outline-none focus:border-navy transition-all" placeholder="Enter last name">
                         </div>
                         <div class="space-y-2 md:col-span-2">
                             <label class="text-sm font-bold text-navy">* Address Line 1</label>
-                            <input type="text" class="w-full p-4 bg-slate-50 border-2 border-slate-200 rounded-xl outline-none focus:border-navy transition-all" placeholder="123 Main St">
+                            <input type="text" class="w-full p-4 bg-slate-50 border-2 border-slate-200 rounded-xl outline-none focus:border-navy transition-all" placeholder="Street address">
                         </div>
                         <div class="space-y-2">
-                            <label class="text-sm font-bold text-navy">Address Line 2 (Optional)</label>
+                            <label class="text-sm font-bold text-navy">Apt/Suite (Optional)</label>
                             <input type="text" class="w-full p-4 bg-slate-50 border-2 border-slate-200 rounded-xl outline-none focus:border-navy transition-all">
                         </div>
                         <div class="space-y-2">
                             <label class="text-sm font-bold text-navy">* Zip Code</label>
-                            <input type="text" id="final-zip" class="w-full p-4 bg-slate-50 border-2 border-slate-200 rounded-xl outline-none focus:border-navy transition-all" placeholder="99950">
+                            <input type="text" id="final-zip" class="w-full p-4 bg-slate-50 border-2 border-slate-200 rounded-xl outline-none focus:border-navy transition-all" placeholder="Zip code">
                         </div>
                         <div class="space-y-2">
-                            <label class="text-sm font-bold text-navy">* Email</label>
-                            <input type="email" class="w-full p-4 bg-slate-50 border-2 border-slate-200 rounded-xl outline-none focus:border-navy transition-all" placeholder="john@example.com">
+                            <label class="text-sm font-bold text-navy">* Email Address</label>
+                            <input type="email" class="w-full p-4 bg-slate-50 border-2 border-slate-200 rounded-xl outline-none focus:border-navy transition-all" placeholder="email@address.com">
                         </div>
                         <div class="space-y-2">
-                            <label class="text-sm font-bold text-navy">* Mobile Phone</label>
+                            <label class="text-sm font-bold text-navy">* Phone Number</label>
                             <input type="tel" oninput="formatPhone(this)" class="w-full p-4 bg-slate-50 border-2 border-slate-200 rounded-xl outline-none focus:border-navy transition-all" placeholder="(555) 000-0000">
                         </div>
                     </div>
 
-                    <div class="space-y-6 text-xs text-slate-500 leading-relaxed border-t pt-8">
-                        <p>By clicking the "Submit" button, I agree that Prudential Advisors, a division of The Prudential Insurance Company of America or one of its representatives may contact me by phone or email...</p>
-                        <p>To arrange a meeting without providing consent, you may also schedule a meeting by calling 1-800-778-2255.</p>
+                    <div class="space-y-6 text-[10px] text-slate-500 leading-relaxed border-t pt-8">
+                        <p>By clicking "Submit", I authorize thehealthcareamerican and its designated representatives to contact me via phone or email regarding insurance products. I understand that consent is not a condition of purchase and that my data is handled according to our Privacy Policy.</p>
                         
-                        <button onclick="alert('Submission Success!')" class="bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 rounded-full font-black shadow-xl uppercase tracking-widest text-sm w-full md:w-auto">
-                            Submit
-                        </button>
+                        <div class="pt-4">
+                            <button onclick="alert('Enrollment request submitted to thehealthcareamerican. A professional will contact you.')" class="bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 rounded-full font-black shadow-xl uppercase tracking-widest text-sm w-full md:w-auto">
+                                Submit Request
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <div class="mt-8 text-[10px] text-slate-400 leading-relaxed space-y-4 max-w-4xl mx-auto px-6">
-            <p>This estimate reflects your selected coverage amount, term length, and health rating. Your financial advisor will guide you in choosing the right policy before you apply.</p>
-            <p>Securities and investment advisory services offered through LPL Enterprise, a Registered Investment Advisor, Member FINRA/SIPC.</p>
+        <div class="mt-8 text-[9px] text-slate-400 leading-relaxed space-y-4 max-w-4xl mx-auto px-6 italic">
+            <p>thehealthcareamerican provides estimates based on current market data and selected health ratings. Final premiums are determined following medical underwriting by the carrier. Securities and investment advisory services offered through regulated partners. Member FINRA/SIPC.</p>
         </div>
     </main>
 
@@ -273,11 +281,11 @@
         function updateCoverage(val) {
             const formatted = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(val);
             document.getElementById('coverage-val').innerText = formatted;
-            document.getElementById('display-price').innerText = 11 + (Math.floor(val / 500000) * 5);
+            // Base calculation: $11.99 + $9.00 for every $500k increase
+            document.getElementById('display-price').innerText = 11 + (Math.floor(val / 500000) * 9);
         }
 
         function setYears(yr, btn) {
-            document.getElementById('years-val').innerText = yr + ' years';
             document.querySelectorAll('.year-btn').forEach(b => {
                 b.className = "year-btn flex-1 py-3 border-2 border-slate-200 text-slate-500 rounded-xl font-bold";
             });
